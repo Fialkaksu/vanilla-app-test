@@ -1,0 +1,21 @@
+.widget {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 12px;
+  gap: 12px;
+}
+
+button {
+  width: 100px;
+  padding: 8px 12px;
+  font: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: auto;
+}
