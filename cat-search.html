@@ -2,22 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SimpleLightbox library</title>
+    <title>Cat Search</title>
     
     
-    <script type="module" crossorigin src="/vanilla-app-test/commonHelpers4.js"></script>
+    <script type="module" crossorigin src="/vanilla-app-test/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/vanilla-app-test/assets/modulepreload-polyfill-3cfb730f.js">
     <link rel="modulepreload" crossorigin href="/vanilla-app-test/assets/vendor-b851b841.js">
     <link rel="stylesheet" href="/vanilla-app-test/assets/vendor-ec21c5a1.css">
-    <link rel="stylesheet" href="/vanilla-app-test/assets/gallery-931f3494.css">
+    <link rel="stylesheet" href="/vanilla-app-test/assets/cat-search-a7487d07.css">
     <link rel="stylesheet" href="/vanilla-app-test/assets/common-5b19b287.css">
   </head>
   <body>
-    <p><a href="index.html">Go back</a></p>
-
-    <ul class="gallery"></ul>
+    <select class="breed-select hide">
+      <option value="" selected disabled>Select Breed</option>
+    </select>
+    <!-- <p class="loader">Loading data, please wait...</p> -->
+    <span class="loader"></span>
+    <!-- <p class="error hide">
+      Oops! Something went wrong! Try reloading the page!
+    </p> -->
+    <div class="cat-info"></div>
 
     
   </body>
