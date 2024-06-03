@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Img Search</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/img-search.css" />
+  </head>
+  <body>
+    <form class="search-form" id="search-form">
+      <input
+        type="text"
+        name="searchQuery"
+        autocomplete="off"
+        placeholder="Search images..."
+      />
+      <button type="submit">🧐</button>
+    </form>
+
+    <div class="gallery"></div>
+
+    <span class="loader hide"></span>
+
+    <script src="js/img-search.js" type="module"></script>
+  </body>
+</html>
