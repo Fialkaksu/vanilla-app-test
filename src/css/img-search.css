@@ -33,13 +33,20 @@ body {
 
 .search-form button {
   height: 40px;
+  font-size: 20px;
+  font-weight: 600;
   margin-left: -7px;
   padding: 0 20px;
   border: 0;
   border-radius: 5px;
-  font-size: 20px;
-  font-weight: 600;
+  background-color: #baccfa;
   cursor: pointer;
+  outline: none;
+  transition: background-color var(--animation-duration) var(--timing-function);
+}
+
+.search-form button:hover {
+  background-color: #8faefd;
 }
 
 .gallery {
@@ -93,16 +100,25 @@ body {
 }
 
 .loader {
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.loader-icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
   display: inline-block;
-  border-top: 4px solid #413e3e;
+  border-top: 4px solid #00d;
   border-right: 4px solid transparent;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
-.loader::after {
+.loader-icon::after {
   content: '';
   box-sizing: border-box;
   position: absolute;
@@ -111,7 +127,7 @@ body {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  border-left: 4px solid #ff3d00;
+  border-left: 4px solid #f3e24d;
   border-bottom: 4px solid transparent;
   animation: rotation 0.5s linear infinite reverse;
 }
